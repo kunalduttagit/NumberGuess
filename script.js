@@ -15,7 +15,7 @@ document.getElementById("submitBtn").onclick = function() {
         document.getElementById("result").innerHTML = "Sorry, No. of tries exeeded";
     }
     if(guess == num) {
-        let text = `Congrats, you've guess it in ${count} guesses.`;
+        let text = `Congrats, you've guessed it in ${count} guesses.`;
         document.getElementById("result").innerHTML = text;
         document.getElementById("Hint").innerHTML = " ";
     }
