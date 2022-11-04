@@ -2,6 +2,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+input:focus {
+    outline:none;
+}
+
 body { 
     background-color: #1B2430;
     font-family: Montserrat;
@@ -48,6 +52,7 @@ body {
 
 #textbox {
     border: none;
+    width: 135px;
     padding: 10px 20px;
     border-radius: 15px;
 }
@@ -72,7 +77,6 @@ nav {
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
-    align-items: top;
 }
 
 .hamburgerMenu {
@@ -198,4 +202,25 @@ nav {
 li:hover {
     letter-spacing: 2px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.849);
+}
+
+#result ,#verdict {
+    margin-top: 30px;
+}
+
+#container {
+    display: flex;
+    position: relative;
+    margin: 0px;
+}
+
+.svg {
+    width: 350px;
+    position: absolute;
+    top: -145px;
+    pointer-events: none;
+}
+
+.hide {
+    display: none;
 }

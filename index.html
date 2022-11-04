@@ -30,16 +30,17 @@
         </nav>
 
     </div>
-       <p id = "title"> Gues any number from 1 till 10</p>
+       <p id = "title"> Gues any number from 1 till 9</p>
        <p id = "discritption">Enter a number</p>
-       <input id="textbox" placeholder="Enter">
-       <button type="submit" id="submitBtn">Submit</button>
-       <div id="Hint">
-            <p id = "hello">Verdict : </p>
-            <p id = "verdict">----- : </p>
-        </div>
-       <p id = "world">Result : </p>
-       <p id = "result">----- : </p>
+       
+       <div id="container">
+         <input id="textbox" placeholder="Enter" type="text" onkeypress="return onlyNumberKey(event)" maxlength="1" size="50%" >
+           <div class="svg" id="svg"></div>
+           <button type="submit" id="submitBtn">Submit</button>
+       </div>
+       
+       <div id="verdict"></div>
+       <div id = "result"></div>
 
        <div class="offScreenMenu">
         <ul id="options" id="options">
@@ -56,7 +57,7 @@
             &#169Developed and Designed by Kunal Dutta at Kunal.Co&#8482.
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
     <script src="script.js" defer></script>
    </div>
    
